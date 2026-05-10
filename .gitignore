@@ -1,0 +1,11 @@
+.gemini/
+.DS_Store
+node_modules/
+dist/
+*.skill
+
+# Exclude source data and development assets
+raw/
+skills/
+templates/
+/GEMINI.md
