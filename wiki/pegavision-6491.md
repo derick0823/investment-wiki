@@ -32,4 +32,4 @@
 
 
 - [[kinsus-3189]]
-- [[financial-report-kinsus-2025]]
+- [[kinsus-3189-financial-report-2025]]

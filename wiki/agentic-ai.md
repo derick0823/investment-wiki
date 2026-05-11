@@ -38,5 +38,5 @@
 
 
 - [[mediatek-2454]]
-- [[ai-asic]]
-- [[mobile-phone-segment]]
+- [[mediatek-2454-ai-asic]]
+- [[mediatek-2454-mobile-phone-segment]]

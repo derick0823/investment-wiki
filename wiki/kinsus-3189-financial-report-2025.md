@@ -47,5 +47,5 @@
 
 
 - [[kinsus-3189]]
-- [[kinsus-substrate-segment]]
+- [[kinsus-3189-substrate-segment]]
 - [[pegavision-6491]]

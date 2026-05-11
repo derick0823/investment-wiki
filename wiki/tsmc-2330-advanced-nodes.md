@@ -45,5 +45,5 @@
 
 
 - [[tsmc-2330]]
-- [[ai-hpc-platform]]
-- [[advanced-packaging-cowos]]
+- [[tsmc-2330-ai-hpc-platform]]
+- [[tsmc-2330-advanced-packaging-cowos]]

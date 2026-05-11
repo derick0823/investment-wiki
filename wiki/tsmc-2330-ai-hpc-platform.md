@@ -32,13 +32,13 @@
 ## 未來展望
 
 
-台積電預計 AI 加速器營收在未來幾年的複合年均成長率 (CAGR) 將達到 **50% 以上 (High 50s)**。為了支持此成長，公司將 2026 年大部分的資本支出用於擴充先進製程與 [[advanced-packaging-cowos]] 產能。
+台積電預計 AI 加速器營收在未來幾年的複合年均成長率 (CAGR) 將達到 **50% 以上 (High 50s)**。為了支持此成長，公司將 2026 年大部分的資本支出用於擴充先進製程與 [[tsmc-2330-advanced-packaging-cowos]] 產能。
 
 
 ## 相關頁面
 
 
 - [[tsmc-2330]]
-- [[tsmc-advanced-nodes]]
-- [[advanced-packaging-cowos]]
+- [[tsmc-2330-advanced-nodes]]
+- [[tsmc-2330-advanced-packaging-cowos]]
 - [[agentic-ai]]

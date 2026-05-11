@@ -36,5 +36,5 @@
 
 
 - [[mediatek-2454]]
-- [[financial-report-1q26]]
+- [[mediatek-2454-financial-report-1q26]]
 - [[agentic-ai]]

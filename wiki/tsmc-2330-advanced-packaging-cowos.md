@@ -38,5 +38,5 @@
 
 
 - [[tsmc-2330]]
-- [[ai-hpc-platform]]
-- [[tsmc-advanced-nodes]]
+- [[tsmc-2330-ai-hpc-platform]]
+- [[tsmc-2330-advanced-nodes]]

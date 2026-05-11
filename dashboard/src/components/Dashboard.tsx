@@ -1,11 +1,31 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { wikiData, CompanyData, QuarterData } from '../data/wikiData';
 import '../styles/Dashboard.css';
 
+const Verify: React.FC<{ link?: string }> = ({ link }) => (
+  link ? <a href={`wiki/${link}.md`} className="verify-link" title="前往 Wiki 驗證數據正確性">驗證來源</a> : null
+);
+
 const Dashboard: React.FC = () => {
-  const [selectedTicker, setSelectedTicker] = useState<string>("2454");
-  const [selectedYear, setSelectedYear] = useState<string>("2026");
-  const [selectedQuarter, setSelectedQuarter] = useState<string>("Q1");
+  // 從 URL 解析初始狀態
+  const params = useMemo(() => new URLSearchParams(window.location.search), []);
+  const initialTicker = params.get("ticker") || "2454";
+  const initialYear = params.get("year") || "2026";
+  const initialQuarter = params.get("quarter") || "Q1";
+
+  const [selectedTicker, setSelectedTicker] = useState<string>(initialTicker);
+  const [selectedYear, setSelectedYear] = useState<string>(initialYear);
+  const [selectedQuarter, setSelectedQuarter] = useState<string>(initialQuarter);
+
+  // 當狀態改變時更新 URL
+  useEffect(() => {
+    const newParams = new URLSearchParams();
+    newParams.set("ticker", selectedTicker);
+    newParams.set("year", selectedYear);
+    newParams.set("quarter", selectedQuarter);
+    const newUrl = window.location.pathname + "?" + newParams.toString();
+    window.history.replaceState({ path: newUrl }, "", newUrl);
+  }, [selectedTicker, selectedYear, selectedQuarter]);
 
   const company = useMemo(() => wikiData[selectedTicker], [selectedTicker]);
   
@@ -41,6 +61,7 @@ const Dashboard: React.FC = () => {
             <div className="kpi-grid">
               {currentData.metrics.map((m, i) => (
                 <div key={i} className="kpi-card">
+                  <Verify link={m.wikiLink} />
                   <div className="kpi-label">{m.label}</div>
                   <div className="kpi-value">{m.value}</div>
                   {m.subValue && (
@@ -70,7 +91,10 @@ const Dashboard: React.FC = () => {
                       <span className="dot" style={{ backgroundColor: i === 0 ? 'var(--accent-color)' : i === 1 ? '#3b82f6' : '#94a3b8' }}></span>
                       <span>{s.label}</span>
                     </div>
-                    <div className="legend-value">{s.value}% ({s.amount})</div>
+                    <div className="legend-value">
+                      {s.value}% ({s.amount})
+                      <a href={`wiki/${s.wikiLink}.md`} style={{fontSize:'0.6rem', color:'var(--accent-color)', marginLeft: '0.5rem'}}>[驗證]</a>
+                    </div>
                   </div>
                 ))}
               </div>
@@ -82,6 +106,7 @@ const Dashboard: React.FC = () => {
             <div className="insight-grid">
               {currentData.growthEngines.map((g, i) => (
                 <div key={i} className="insight-card">
+                  <Verify link={g.wikiLink} />
                   <h3>{g.title}</h3>
                   <p>{g.content}</p>
                   <div className="insight-source">來源：{g.source}</div>
@@ -95,6 +120,7 @@ const Dashboard: React.FC = () => {
             <div className="insight-grid">
               {currentData.strategicTrends.map((s, i) => (
                 <div key={i} className="insight-card">
+                  <Verify link={s.wikiLink} />
                   <h3>{s.title}</h3>
                   <p>{s.content}</p>
                   <div className="insight-source">來源：{s.source}</div>
@@ -108,6 +134,7 @@ const Dashboard: React.FC = () => {
             <div className="outlook-grid" style={{ marginBottom: '2rem' }}>
               {currentData.segmentOutlooks.map((s, i) => (
                 <div key={i} className="outlook-card">
+                  <Verify link={s.wikiLink} />
                   <div className="outlook-header">
                     <span className="outlook-label">{s.label}</span>
                     <span className={`outlook-status status-${s.expectation}`}>
@@ -121,6 +148,7 @@ const Dashboard: React.FC = () => {
             <div className="outlook-banner">
               {currentData.outlook.map((o, i) => (
                 <div key={i} className="outlook-item">
+                  <Verify link={o.wikiLink} />
                   <div className="kpi-label">{o.label}</div>
                   <div className="kpi-value">{o.value}</div>
                   {o.subValue && <div className="kpi-subvalue">{o.subValue}</div>}

@@ -29,13 +29,13 @@
 ## 主要業務部門
 
 
-- **載板部門**：集團營收核心 (佔 82%)，專注於 BGA 等基板生產。詳見 [[kinsus-substrate-segment]]。
+- **載板部門**：集團營收核心 (佔 82%)，專注於 BGA 等基板生產。詳見 [[kinsus-3189-substrate-segment]]。
 - **光學部門 (晶碩光學)**：獲利核心 (佔集團部門利益 60%)，主要產品為隱形眼鏡。詳見 [[pegavision-6491]]。
 
 
 ## 相關頁面
 
 
-- [[financial-report-kinsus-2025]]
-- [[kinsus-substrate-segment]]
+- [[kinsus-3189-financial-report-2025]]
+- [[kinsus-3189-substrate-segment]]
 - [[pegavision-6491]]

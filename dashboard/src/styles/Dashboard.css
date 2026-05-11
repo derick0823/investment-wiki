@@ -284,3 +284,25 @@ select {
     grid-template-columns: 1fr;
   }
 }
+
+.kpi-card, .outlook-card, .insight-card, .outlook-item {
+  position: relative;
+}
+
+.verify-link {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 0.7rem;
+  background: var(--border);
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: var(--text-secondary);
+  opacity: 0.6;
+  text-decoration: none;
+}
+
+.verify-link:hover {
+  opacity: 1;
+  color: var(--accent-color);
+}

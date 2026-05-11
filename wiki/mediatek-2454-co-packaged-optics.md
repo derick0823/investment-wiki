@@ -38,4 +38,4 @@
 
 
 - [[mediatek-2454]]
-- [[ai-asic]]
+- [[mediatek-2454-ai-asic]]

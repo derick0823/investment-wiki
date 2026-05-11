@@ -24,7 +24,7 @@
 ## 2026 年現狀
 
 
-在 2026 年第一季，公司營收表現穩健，落在財測高標 (source: 聯發科_說明會逐字稿.pdf)。雖然手機市場面臨短期挑戰，但公司透過多元化的平台佈局，特別是在 [[ai-asic]] 與雲端基礎設施方面的投資，正迎來結構性的成長。
+在 2026 年第一季，公司營收表現穩健，落在財測高標 (source: 聯發科_說明會逐字稿.pdf)。雖然手機市場面臨短期挑戰，但公司透過多元化的平台佈局，特別是在 [[mediatek-2454-ai-asic]] 與雲端基礎設施方面的投資，正迎來結構性的成長。
 
 
 執行長蔡力行特別強調 [[agentic-ai]] 將是產業的轉折點，聯發科將以此作為核心驅動力，推動手機、車用及物聯網產品的革新。
@@ -33,16 +33,16 @@
 ## 主要業務部門
 
 
-- **手機業務**：目前佔營收約 49%，正向 2nm 製程邁進。詳見 [[mobile-phone-segment]]。
+- **手機業務**：目前佔營收約 49%，正向 2nm 製程邁進。詳見 [[mediatek-2454-mobile-phone-segment]]。
 - **智慧裝置平台**：受惠於市佔提升，Q1 表現強勁。
-- **雲端運算與 ASIC**：預計在 2026 年下半年大幅貢獻營收。詳見 [[ai-asic]]。
+- **雲端運算與 ASIC**：預計在 2026 年下半年大幅貢獻營收。詳見 [[mediatek-2454-ai-asic]]。
 
 
 ## 相關頁面
 
 
-- [[financial-report-1q26]]
-- [[ai-asic]]
+- [[mediatek-2454-financial-report-1q26]]
+- [[mediatek-2454-ai-asic]]
 - [[agentic-ai]]
-- [[mobile-phone-segment]]
-- [[co-packaged-optics]]
+- [[mediatek-2454-mobile-phone-segment]]
+- [[mediatek-2454-co-packaged-optics]]

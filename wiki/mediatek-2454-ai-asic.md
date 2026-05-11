@@ -42,5 +42,5 @@
 
 
 - [[mediatek-2454]]
-- [[co-packaged-optics]]
+- [[mediatek-2454-co-packaged-optics]]
 - [[agentic-ai]]
